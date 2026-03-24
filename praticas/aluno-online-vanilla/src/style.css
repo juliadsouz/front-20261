@@ -11,6 +11,7 @@
     --cor-primaria: #e9e9e9;
     --cor-texto: #303030;
 }
+
 body {
     display: flex;
     height: 100vh;
@@ -85,17 +86,18 @@ footer {
     margin-bottom: 24px;
     color: #303030;
 }
-#emailErro {
+
+#email-erro {
     color: red;
     margin-bottom: 10px;
 }
 
-#senhaErro {
+#senha-erro {
     color: red;
     margin-bottom: 10px;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
     main {
         max-width: 400px; 
         width: 100%;

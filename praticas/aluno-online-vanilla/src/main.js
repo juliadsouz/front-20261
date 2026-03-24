@@ -1,4 +1,3 @@
-
 import "./style.css";
 
 
@@ -7,8 +6,8 @@ const senha = document.querySelector("#senha");
 const botao = document.querySelector("button");
 
 botao.addEventListener("click", function (e) {
-  const emailErro = document.querySelector("#emailErro");
-  const senhaErro = document.querySelector("#senhaErro");
+  const emailErro = document.querySelector("#email-erro");
+  const senhaErro = document.querySelector("#senha-erro");
 
   emailErro.textContent = '';
   senhaErro.textContent = '';
