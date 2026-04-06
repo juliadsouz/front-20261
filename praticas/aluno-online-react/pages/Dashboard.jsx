@@ -7,7 +7,7 @@ function Dashboard() {
     return (
     <body class= 'dashboard'>
         <Sidebar />
-        <Topbar />
+        <Topbar titulo="Olá, Aluno!" />
 
         <h2>Bem-vindo ao portal do aluno</h2>
 

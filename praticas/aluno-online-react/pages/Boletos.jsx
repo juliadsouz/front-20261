@@ -6,8 +6,9 @@ return (
     <div>
         <Sidebar />
         <main>
-            <Topbar />
-            <h2>Meus boletos</h2>
+        
+        <Topbar titulo="Meus boletos" />
+
             <section></section>    
         </main>
     </div>

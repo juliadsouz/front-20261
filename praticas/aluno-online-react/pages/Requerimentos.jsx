@@ -6,8 +6,9 @@ function Requerimentos() {
         <div>
             <Sidebar />
         <main>
-            <Topbar />
-            <h2> Meus Requerimentos</h2>
+
+        <Topbar titulo="Meus requerimentos" />
+
             <section></section>
         </main>
         </div>

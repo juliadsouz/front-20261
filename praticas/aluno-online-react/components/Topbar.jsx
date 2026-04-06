@@ -1,13 +1,15 @@
 import './Topbar.css'
 
-function Topbar() {
+function Topbar({titulo}) {
  return (
     <div>
         <header>
-      <h1>Olá, Aluno!</h1>
+      <h1>{titulo}</h1>
+
       <img src="../src/assets/avatar.svg" width="64" />
+      
       </header>
-</div>
+    </div>
 )};
 
 export default Topbar;

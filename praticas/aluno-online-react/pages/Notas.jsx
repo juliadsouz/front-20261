@@ -6,7 +6,9 @@ function Notas() {
         <div>
             <Sidebar />
         <main>
-            <Topbar />
+            
+            <Topbar titulo="Minhas Notas" />
+
             <h2> Minhas Notas</h2>
         </main>
         </div>
