@@ -1,15 +1,19 @@
 import Sidebar from '../components/Sidebar'
+import TabelaFaltas from '../components/TabelaFaltas';
 import Topbar from '../components/Topbar'
 
 function Faltas() {
     return (
-    <div>
+   <div className='center'>
         <Sidebar />
+        
         <main>
-           <Topbar titulo="Minhas faltas" />
-            
-            <section></section>
-        </main>
+        <Topbar titulo="Minhas Faltas" />
+
+    <h2> Histórico de Faltas por semestre </h2>
+
+    <TabelaFaltas />    
+    </main>
     </div>
     )
 }

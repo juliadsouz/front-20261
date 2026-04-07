@@ -1,18 +1,22 @@
 import Sidebar from '../components/Sidebar'
+import TabelaRequerimentos from '../components/TabelaRequerimentos';
 import Topbar from '../components/Topbar'
 
 function Requerimentos() {
     return (
-        <div>
-            <Sidebar />
+       <div className='center'>
+        <Sidebar />
+        
         <main>
+        <Topbar titulo="Meus Requerimentos" />
 
-        <Topbar titulo="Meus requerimentos" />
+    <h2> Faça a solicitação online para a secretaria </h2>
 
-            <section></section>
-        </main>
-        </div>
+    <TabelaRequerimentos />    
+    </main>
+    </div>
     );
 }
 
 export default Requerimentos;
+

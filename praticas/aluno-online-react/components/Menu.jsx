@@ -1,9 +1,9 @@
+import './Menu.css'
 
 function Menu(){
     return (
         <>
-        <h3> Aluno Online</h3>
-
+       
         <ul>
         <li>Dashboard</li>
           <li>Notas</li>

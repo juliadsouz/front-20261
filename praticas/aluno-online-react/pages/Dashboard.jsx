@@ -5,15 +5,17 @@ import './Dashboard.css'
 
 function Dashboard() {
     return (
-    <body class= 'dashboard'>
+    <div className= 'center'>
         <Sidebar />
+
+        <main>
         <Topbar titulo="Olá, Aluno!" />
 
         <h2>Bem-vindo ao portal do aluno</h2>
 
         <Card />
-
-    </body>
+    </main>
+    </div>
     )}
 
     export default Dashboard;

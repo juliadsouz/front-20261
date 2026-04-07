@@ -1,16 +1,20 @@
+import './Boletos.css'
 import Sidebar from '../components/Sidebar'
+import TabelaBoletos from '../components/TabelaBoletos';
 import Topbar from '../components/Topbar'
 
 function Boletos () {
 return (
-    <div>
+    <div className='center'>
         <Sidebar />
-        <main>
         
+        <main>
         <Topbar titulo="Meus boletos" />
 
-            <section></section>    
-        </main>
+    <h2> Histórico de Pagamentos </h2>
+
+    <TabelaBoletos />    
+    </main>
     </div>
 )
 }
