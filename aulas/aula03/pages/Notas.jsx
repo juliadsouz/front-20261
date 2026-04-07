@@ -1,15 +1,30 @@
 import Sidebar from '../components/Sidebar'
-import Topbar from '../components/Topbar'
-
+import Tabela from '../components/Tabela'
+import Main from '../components/Main'
 function Notas() {
+    const colunas = [
+        "Disciplina",
+        "A1",
+        "A2",
+        "A3",
+        "Menção"
+    ];
+    const notas = [
+        ["BI e Data Warehousing", "","","","SR"],
+        ["Construção de Frontend", "","","","SR"],
+        ["DevOps","","","", "SR"]
+    ]
     return (
-        <div>
+        <>
             <Sidebar />
-        <main>
-            <Topbar />
-            <h2> Minhas Notas</h2>
-        </main>
-        </div>
+        <Main titulo= 'Minha Notas'
+        subtitulo= 'Histórico de notas por semestre'>
+
+        <Tabela titulo='2026.1' colunas={colunas} dados={notas[0]}/>
+        <Tabela titulo='2025.2' />
+        <Tabela titulo='2025.1' />
+        </Main>
+        </>
     );
 }
 

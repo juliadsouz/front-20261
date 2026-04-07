@@ -10,7 +10,7 @@ function Notas() {
         <main>
         <Topbar titulo="Minhas Notas" />
 
-    <h2> Histórico de Pagamentos </h2>
+    <h2> Histórico de notas por semestre </h2>
 
     <TabelaNotas />  
     </main>
