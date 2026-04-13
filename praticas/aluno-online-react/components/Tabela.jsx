@@ -1,29 +1,25 @@
 function Tabela(props) {
-    return (
-        <>
+    return <>
             {props.titulo && <h3>{props.titulo}</h3>}
-
             <table>
                 <thead>
-                    <tr>
+                    <th>
                         {props.colunas.map((item, index) => (
-                            <th key={index}>{item}</th>
+                            <td key={index}>{item}</td>
                         ))}
-                    </tr>
+                    </th>
                 </thead>
-
                 <tbody>
                     {props.dados.map((linha, i) => (
                         <tr key={i}>
-                            {props.colunas.map((coluna, j) => (
-                                <td key={j}>{linha[coluna]}</td>
+                            {linha.map((coluna, j) => (
+                                <td key={j}>{coluna}</td>
                             ))}
                         </tr>
                     ))}
                 </tbody>
             </table>
         </>
-    )
-}
-
-export default Tabela;
+    }
+    
+    export default Tabela;
