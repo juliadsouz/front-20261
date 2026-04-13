@@ -1,7 +1,9 @@
+import './Tabela.css'
 function Tabela(props) {
     return <>
-            {props.titulo && <caption>{props.titulo}</caption>}
+            
             <table>
+{props.titulo && <caption>{props.titulo}</caption>}
                 <thead>
                     <tr>
                         {props.colunas.map((item, index) => (

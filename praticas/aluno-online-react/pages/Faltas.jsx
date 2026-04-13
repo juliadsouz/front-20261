@@ -1,6 +1,7 @@
 import Sidebar from '../components/Sidebar'
-import TabelaFaltas from '../components/TabelaFaltas';
-import Topbar from '../components/Topbar'
+import Tabela from '../components/Tabela';
+import Topbar from '../components/Topbar';
+
 
 function Faltas() {
     const colunas = [
@@ -8,7 +9,7 @@ function Faltas() {
         "Faltas",
         "Presença"
     ]
-    const notas = [
+    const faltas = [
     [
         ["BI e Data Warehousing", "0", "100%"],
         ["Construção de FrontEnd", "0", "100%"],
@@ -35,7 +36,10 @@ function Faltas() {
 
     <h2> Histórico de Faltas por semestre </h2>
 
-    <TabelaFaltas />    
+    <Tabela titulo="2026.1" colunas={colunas} dados={faltas[0]}/>
+    <Tabela titulo="2025.2" colunas={colunas} dados={faltas[1]}/>
+    <Tabela titulo="2025.1" colunas={colunas} dados={faltas[2]}/>
+
     </main>
     </div>
     )

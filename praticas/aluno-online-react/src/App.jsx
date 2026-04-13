@@ -6,7 +6,7 @@ import Requerimentos from '../pages/Requerimentos';
 import './App.css'
 
 function App() {
-    const pagina = 4
+    const pagina = 5
   
     switch(pagina) {
       case 1: return <Dashboard/>
