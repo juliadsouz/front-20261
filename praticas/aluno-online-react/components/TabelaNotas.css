@@ -1,0 +1,13 @@
+table {
+    width: 90%;
+    border: 0.5px solid var(--cor-fundo);
+    margin: 20px;
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+}
+
+td {
+  background-color: white;
+}
+
+
