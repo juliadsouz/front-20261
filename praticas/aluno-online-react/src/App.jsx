@@ -6,8 +6,17 @@ import Requerimentos from '../pages/Requerimentos';
 import './App.css'
 
 function App() {
- return <Dashboard/>
-
-}
-
-export default App;
+    const pagina = 4
+  
+    switch(pagina) {
+      case 1: return <Dashboard/>
+      case 2: return <Notas/>
+      case 3: return <Faltas/>
+      case 4: return <Boletos/>
+      case 5: return <Requerimentos/>
+      default: return <></>
+    }
+  
+  }
+  
+  export default App;
