@@ -3,10 +3,10 @@ import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import './Dashboard.css'
 
-function Dashboard() {
+function Dashboard({ navegaPara }) {
     return (
     <div className= 'center'>
-        <Sidebar />
+        <Sidebar navegaPara={navegaPara}/>
 
         <main>
         <Topbar titulo="Olá, Aluno!" />

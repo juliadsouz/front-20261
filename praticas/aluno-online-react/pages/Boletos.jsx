@@ -3,7 +3,7 @@ import Sidebar from '../components/Sidebar'
 import Tabela from '../components/Tabela'
 import Topbar from '../components/Topbar'
 
-function Boletos () {
+function Boletos ({navegaPara}) {
     const colunas = [
         "Vencimento",
         "Valor R$",
@@ -33,7 +33,7 @@ function Boletos () {
     ]
 return (
     <div className='center'>
-        <Sidebar />
+      <Sidebar navegaPara={navegaPara}/>
         
         <main>
         <Topbar titulo="Meus boletos" />
