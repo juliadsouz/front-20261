@@ -1,7 +1,7 @@
 import './Boletos.css'
-import Sidebar from '../components/Sidebar'
-import Tabela from '../components/Tabela'
-import Topbar from '../components/Topbar'
+import Sidebar from '../src/components/Sidebar'
+import Tabela from '../src/components/Tabela'
+import Topbar from '../src/components/Topbar'
 
 function Boletos ({navegaPara}) {
     const colunas = [

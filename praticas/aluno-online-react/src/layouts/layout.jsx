@@ -1,14 +1,16 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 import Menu from "../components/Menu";
-
-export default function Layout() {
-  return (
-    <div>
-      <h1>Portal do Aluno</h1>
-
-      <Menu />
-
-     <Outlet />
-    </div>
-  );
+function Layout() {
+    return (
+    <>
+        <aside>
+            <Menu/>
+        </aside>
+        <main>
+            <Outlet/>
+        </main>
+    </>
+    )
 }
+
+export default Layout;

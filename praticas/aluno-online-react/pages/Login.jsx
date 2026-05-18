@@ -1,5 +1,5 @@
 import logo from "../src/assets/learn.svg"
-import FormLogin from "../components/FormLogin";
+import FormLogin from "../src/components/FormLogin";
 import './Login.css'
 function Login({navegaPara}) {
     return(

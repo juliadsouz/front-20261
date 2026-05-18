@@ -1,6 +1,6 @@
-import Card from "../components/Card";
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
+import Card from "../src/components/Card";
+import Sidebar from "../src/components/Sidebar";
+import Topbar from "../src/components/Topbar";
 import './Dashboard.css'
 
 function Dashboard({ navegaPara }) {
