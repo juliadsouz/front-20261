@@ -2,7 +2,7 @@ import Sidebar from '../components/Sidebar'
 import Tabela from '../components/Tabela'
 import Topbar from '../components/Topbar'
 
-function Requerimentos({navegaPara}) {
+function Requerimentos({}) {
     const colunas = [
         "Tipo de Requerimento",
         "Data de Solicitação",
@@ -19,8 +19,6 @@ function Requerimentos({navegaPara}) {
        
     ]
     return (
-       <div className='center'>
-         <Sidebar navegaPara={navegaPara}/>
         
         <main>
         <Topbar titulo="Meus Requerimentos" />
@@ -30,7 +28,7 @@ function Requerimentos({navegaPara}) {
     <Tabela colunas={colunas} dados={req}/>
 
     </main>
-    </div>
+   
     );
 }
 
