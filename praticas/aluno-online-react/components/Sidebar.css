@@ -1,0 +1,15 @@
+.sidebar {
+    background-color: var(--cor-fundo);
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}

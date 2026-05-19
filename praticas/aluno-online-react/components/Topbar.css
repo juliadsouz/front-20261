@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    flex-direction: row;
+    color: var(--cor-texto);
+    justify-content: space-between;
+    margin: 30px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
