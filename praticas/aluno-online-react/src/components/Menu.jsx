@@ -1,7 +1,7 @@
 import './Menu.css'
-import { NavLink, useNavigate } from 'react-router';
+import { NavLink} from 'react-router';
 
-function Menu({ navegaPara }) {
+function Menu() {
   return (
     <nav>
       <ul>

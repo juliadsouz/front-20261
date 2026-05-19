@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import './Dashboard.css'
 
-function Dashboard({}) {
+function Dashboard() {
     return (
 
     <main>

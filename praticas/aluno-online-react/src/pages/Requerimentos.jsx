@@ -2,7 +2,7 @@ import Sidebar from '../components/Sidebar'
 import Tabela from '../components/Tabela'
 import Topbar from '../components/Topbar'
 
-function Requerimentos({}) {
+function Requerimentos() {
     const colunas = [
         "Tipo de Requerimento",
         "Data de Solicitação",

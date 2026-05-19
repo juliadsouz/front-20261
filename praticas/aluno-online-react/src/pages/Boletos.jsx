@@ -3,7 +3,7 @@ import Sidebar from '../components/Sidebar'
 import Tabela from '../components/Tabela'
 import Topbar from '../components/Topbar'
 
-function Boletos ({}) {
+function Boletos () {
     const colunas = [
         "Vencimento",
         "Valor R$",

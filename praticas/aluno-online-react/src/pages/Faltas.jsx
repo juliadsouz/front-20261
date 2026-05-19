@@ -3,7 +3,7 @@ import Tabela from '../components/Tabela';
 import Topbar from '../components/Topbar';
 
 
-function Faltas({}) {
+function Faltas() {
     const colunas = [
         "Disciplina",
         "Faltas",
