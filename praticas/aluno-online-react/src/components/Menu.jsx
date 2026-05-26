@@ -1,5 +1,5 @@
 import './Menu.css';
-import { NavLink, useNavigate } from 'react-router';
+import { NavLink} from 'react-router';
 
 
 function Menu() {
@@ -20,7 +20,7 @@ function Menu() {
               <li> <NavLink to="/notas"> Notas </NavLink> </li>
               <li> <NavLink to="/boletos"> Boletos </NavLink> </li>
               <li> <NavLink to="/requerimentos"> Requerimentos </NavLink> </li>
-              <li><a href="#" onClick={handleSair}>Sair</a></li>
+              <li><a onClick={handleSair}>Sair</a></li>
 
           </ul>
 
