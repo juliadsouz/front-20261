@@ -12,7 +12,11 @@
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.15.0"
+=======
+    "react-router": "^7.15.1"
+>>>>>>> 1045f888627589664d474f45a84692171b3c9ec5
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -23,6 +27,6 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
-    "vite": "^7.3.1"
+    "vite": "^7.3.3"
   }
 }

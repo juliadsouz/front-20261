@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .layout {
     display: flex;
     flex-direction: row;
@@ -6,4 +7,9 @@
 main {
     flex: 1;
     padding: 20px;
+=======
+.center {
+    display: flex;
+    flex-direction: row;;
+>>>>>>> 1045f888627589664d474f45a84692171b3c9ec5
 }
