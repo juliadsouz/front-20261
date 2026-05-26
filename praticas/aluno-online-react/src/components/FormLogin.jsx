@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { useNavigate } from "react-router";
 import InputEmail from "./InputEmail";
 import InputSubmit from "./InputSubmit";
 import InputSenha from "./InputSenha";
@@ -9,6 +9,7 @@ import useAuthContext from "../contexts/useAuthContext";
 import "./FormLogin.css";
 
 function FormLogin({ navegaPara }) {
+  const navigate = useNavigate();
   const { login } = useAuthContext();
 
   const [email, setemail] = useState("");
@@ -57,7 +58,7 @@ function FormLogin({ navegaPara }) {
         email: email,
       });
 
-      navegaPara(1);
+      navigate("/");
     }
   };
 
