@@ -1,11 +1,11 @@
-import './InputSubmit.css'
+import "./InputSubmit.css";
 
-function InputSubmit({texto}) {
-    return (
-        <button type="submit">
-            {texto}
-        </button>
-    )
+function InputSubmit() {
+  return (
+    <button type="submit">
+      Entrar
+    </button>
+  );
 }
 
-export default InputSubmit
+export default InputSubmit;

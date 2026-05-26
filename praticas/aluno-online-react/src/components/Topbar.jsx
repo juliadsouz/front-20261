@@ -1,13 +1,22 @@
 import './Topbar.css'
+import { useAuthContext } from "../contexts/AuthContext";
 
 function Topbar({titulo}) {
+  const { logout, usuario } = useAuthContext();
+
  return (
     <div>
         <header>
       <h1>{titulo}</h1>
-
-      <img src="../src/assets/avatar.svg" width="64" />
       
+      <div className="perfil">
+      <img src="../src/assets/avatar.svg" width="64" />
+      <div className="usuario-info">
+  <h4>{usuario.nome}</h4>
+  <h5>{usuario.email}</h5>
+</div>
+     </div>
+
       </header>
     </div>
 )};

@@ -11,3 +11,13 @@ img {
     width: 50px;
 }
 
+.usuario-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
