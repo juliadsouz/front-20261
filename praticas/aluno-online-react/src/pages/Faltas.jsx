@@ -3,7 +3,7 @@ import Tabela from '../components/Tabela';
 import Topbar from '../components/Topbar';
 
 
-function Faltas({navegaPara}) {
+function Faltas() {
     const colunas = [
         "Disciplina",
         "Faltas",
@@ -28,8 +28,6 @@ function Faltas({navegaPara}) {
     ],
 ]
     return (
-   <div className='center'>
-       <Sidebar navegaPara={navegaPara}/>
         
         <main>
         <Topbar titulo="Minhas Faltas" />
@@ -41,7 +39,7 @@ function Faltas({navegaPara}) {
     <Tabela titulo="2025.1" colunas={colunas} dados={faltas[2]}/>
 
     </main>
-    </div>
+
     )
 }
 

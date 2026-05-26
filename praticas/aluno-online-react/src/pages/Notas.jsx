@@ -3,7 +3,7 @@ import Tabela from '../components/Tabela';
 import Topbar from '../components/Topbar';
 
 
-function Notas({navegaPara}) {
+function Notas() {
     const colunas = [
         "Disciplina",
         "A1",
@@ -30,9 +30,7 @@ function Notas({navegaPara}) {
 ]
 
     return (
-       <div className='center'>
-       <Sidebar navegaPara={navegaPara}/>
-        
+             
         <main>
        
         <Topbar titulo="Minhas Notas" />
@@ -44,7 +42,7 @@ function Notas({navegaPara}) {
     <Tabela titulo="2025.1" colunas={colunas} dados={notas[2]}/>
     
     </main>
-    </div>
+
     );
 }
 
