@@ -1,7 +1,6 @@
 import "./Menu.css";
 import { NavLink } from "react-router";
-
-import { useAuthContext } from "../contexts/AuthContext";
+import useAuthContext from "../contexts/useAuthContext";
 
 function Menu() {
   const {logout} = useAuthContext();

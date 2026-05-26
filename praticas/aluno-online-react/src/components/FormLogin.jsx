@@ -4,7 +4,7 @@ import InputEmail from "./InputEmail";
 import InputSubmit from "./InputSubmit";
 import InputSenha from "./InputSenha";
 
-import { useAuthContext } from "../contexts/AuthContext";
+import useAuthContext from "../contexts/useAuthContext";
 
 import "./FormLogin.css";
 

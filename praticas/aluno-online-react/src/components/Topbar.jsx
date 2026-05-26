@@ -1,8 +1,8 @@
 import './Topbar.css'
-import { useAuthContext } from "../contexts/AuthContext";
+import useAuthContext from "../contexts/useAuthContext";
 
 function Topbar({titulo}) {
-  const { logout, usuario } = useAuthContext();
+  const { usuario } = useAuthContext();
 
  return (
     <div>

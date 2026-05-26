@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router';
 import './App.css'
-import { AuthProvider, useAuthContext } from "./contexts/AuthContext";
+import useAuthContext from "./contexts/useAuthContext";
 import Layout from "./layouts/Layout";
 import Dashboard from "./pages/Dashboard";
 import Faltas from "./pages/Faltas";
