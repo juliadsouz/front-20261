@@ -8,7 +8,7 @@ import useAuthContext from "../contexts/useAuthContext";
 
 import "./FormLogin.css";
 
-function FormLogin({ navegaPara }) {
+function FormLogin() {
   const navigate = useNavigate();
   const { login } = useAuthContext();
 
