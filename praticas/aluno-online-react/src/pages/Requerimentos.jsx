@@ -27,6 +27,10 @@ function Requerimentos() {
 
     <Tabela colunas={colunas} dados={req}/>
 
+    <Link to="/requerimentosForm">
+        <button>➕ Novo Requerimento</button>
+      </Link>
+
     </main>
    
     );

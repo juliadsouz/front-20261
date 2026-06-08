@@ -8,6 +8,7 @@ import Notas from "./pages/Notas";
 import Boletos from "./pages/Boletos";
 import Requerimentos from "./pages/Requerimentos";
 import Login from "./pages/Login";
+import RequerimentoForm from './forms/RequerimentoForm';
 
 function App() {
     const { logado } = useAuthContext();
@@ -28,6 +29,7 @@ function App() {
           <Route path="notas" element={<Notas />} />
           <Route path="boletos" element={<Boletos />} />
           <Route path="requerimentos" element={<Requerimentos />} />
+          <Route path="/requerimentosForm" element={<RequerimentoForm/>} />
         </Route>
 
         <Route path="/login" element={<Dashboard />} />
