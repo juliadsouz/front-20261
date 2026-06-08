@@ -1,60 +1,74 @@
 import { useForm } from "react-hook-form";
+import './RequerimentoForm.css'
+import { Link } from "react-router";
 
 function RequerimentoForm() {
-    const [erro, setErro] = useState();
-    const { id } = useParams();
-    const navigate = useNavigate();
-    const { register, handleSubmit, reset } = useForm();
-  
-    const salvar = async (dados) => {
-      try {
-        if (id) {
-          await atualizar({ id, ...dados });
-        } else {
-          await criar(dados);
-        }
-        navigate("/requerimentos");
-      } catch (error) {
-        setErro(error.message);
-      }
-    };
-  
-    useEffect(() => {
-      if (!id) {
-        return;
-      }
-  
-      const disparar = async () => {
-        const resposta = await obter({id});
-        reset(resposta);
-      }
-  
-      disparar();
-    }, []);
-  
-    return (
-      <>
-        <h1>Cadastro de Produtos</h1>
-        <p>{erro}</p>
-        <form onSubmit={handleSubmit(salvar)}>
-          <input
-            type="text"
-            placeholder="Nome do Produto"
-            {...register("nome")}
-          />
-          <input 
-            type="text" 
-            placeholder="Preço 0,00" 
-            {...register("preco")} />
-          <input 
-            type="text"
-            placeholder="Unidade" 
-            {...register("unidade")} 
-          />
-          <Link to="/requerimentos">Cancelar</Link>
-          <button type="submit">Salvar</button>
-        </form>
-      </>
-    );
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm();
+
+  function salvar(dados) {
+    console.log(dados);
+    reset();
   }
+
+  return (
+    <form
+  className="requerimento-form"
+  onSubmit={handleSubmit(salvar)}
+>
+  <h2 className="tp-requerimento">Novo Requerimento</h2>
+
+  <div className="campo">
+    <label>Tipo de Requerimento</label>
+
+    <select
+      {...register("tipo", {
+        required: "Tipo é obrigatório"
+      })}
+    >
+      <option value="">Selecione um tipo...</option>
+      <option value="matricula">Matrícula</option>
+      <option value="historico">Histórico</option>
+    </select>
+
+    <p className="erro">{errors.tipo?.message}</p>
+  </div>
+
+  <div className="campo">
+    <label>Descrição</label>
+
+    <textarea
+      {...register("descricao", {
+        required: "Descrição é obrigatória",
+        minLength: {
+          value: 10,
+          message: "Mínimo 10 caracteres"
+        }
+      })}
+    />
+
+    <p className="erro">{errors.descricao?.message}</p>
+  </div>
+
+  <div>
+    <p>Data do Requerimento</p>
+
+    <input
+      type="date"
+      {...register("data")}
+    />
+  </div>
+
+  <div className="botoes">
+    <Link to="/requerimentos"> <button> Cancelar </button> </Link>
+    <button type="submit">Salvar</button>
+  </div>
+</form>
+  );
+}
+
 export default RequerimentoForm;

@@ -28,8 +28,10 @@ function App() {
           <Route path="faltas" element={<Faltas />} />
           <Route path="notas" element={<Notas />} />
           <Route path="boletos" element={<Boletos />} />
-          <Route path="requerimentos" element={<Requerimentos />} />
-          <Route path="/requerimentosForm" element={<RequerimentoForm/>} />
+          <Route path="requerimentos" element={<Requerimentos />} >
+
+          <Route path="requerimentoForm" element={<RequerimentoForm/>} />
+        </Route>
         </Route>
 
         <Route path="/login" element={<Dashboard />} />
