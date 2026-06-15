@@ -2,7 +2,7 @@ import "./InputSubmit.css";
 
 function InputSubmit() {
   return (
-    <button type="submit">
+    <button className='btn-submit'type="submit">
       Entrar
     </button>
   );
