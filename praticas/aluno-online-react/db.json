@@ -1,0 +1,11 @@
+{
+  "requerimentos": [
+    {
+      "tipo": "matricula",
+      "descricao": "Solicitação de nova matrícula",
+      "data": "2026-06-15",
+      "id": "mF5EOrFml8I"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
