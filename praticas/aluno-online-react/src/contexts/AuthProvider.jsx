@@ -8,7 +8,7 @@ function AuthProvider({ children }) {
   const [usuario, setUsuario] = useState(localStorage.getItem("app.token"));
 
   const login = async (dados) => {
-    const { usuario, token, mensagem } = await entrar(dados);
+    const { token, mensagem } = await entrar(dados);
 
     if (token) {
       setUsuario({nome: dados.nome, email: dados.email, token});

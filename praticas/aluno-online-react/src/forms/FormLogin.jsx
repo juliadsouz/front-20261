@@ -58,7 +58,7 @@ function FormLogin() {
     });
 
     navigate("/");
-  } catch (erro) {
+  } catch {
     setSenhaErro("E-mail ou senha inválidos");
   }
 }
