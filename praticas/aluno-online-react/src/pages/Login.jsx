@@ -1,5 +1,5 @@
 import logo from "../assets/learn.svg"
-import FormLogin from "../components/FormLogin";
+import FormLogin from "../forms/FormLogin";
 import './Login.css'
 
 

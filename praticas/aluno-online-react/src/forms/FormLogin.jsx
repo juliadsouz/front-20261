@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import InputEmail from "./InputEmail";
-import InputSubmit from "./InputSubmit";
-import InputSenha from "./InputSenha";
-
+import InputEmail from "../components/InputEmail";
+import InputSenha from "../components/InputSenha";
+import InputSubmit from "../components/InputSubmit"
 import useAuthContext from "../contexts/useAuthContext";
 
 import "./FormLogin.css";
@@ -18,7 +17,7 @@ function FormLogin() {
   const [emailErro, setemailErro] = useState("");
   const [senhaErro, setSenhaErro] = useState("");
 
-  const trataSubmit = (e) => {
+  const trataSubmit = async (e) => {
     e.preventDefault();
 
     setemailErro("");
@@ -51,15 +50,18 @@ function FormLogin() {
       valido = false;
     }
 
-    if (valido) {
-      login({
-        id: 1,
-        nome: "Julia",
-        email: email,
-      });
+   if (valido) {
+  try {
+    await login({
+      email,
+      senha,
+    });
 
-      navigate("/");
-    }
+    navigate("/");
+  } catch {
+    setSenhaErro("E-mail ou senha inválidos");
+  }
+}
   };
 
   return (

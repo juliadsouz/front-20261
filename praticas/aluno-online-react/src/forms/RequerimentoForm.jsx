@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import './RequerimentoForm.css'
 import { Link } from "react-router";
+import  {cadastrarRequerimento}  from "../services/requerimentoService";
 
 function RequerimentoForm() {
   const {
@@ -10,10 +11,17 @@ function RequerimentoForm() {
     formState: { errors }
   } = useForm();
 
-  function salvar(dados) {
-    console.log(dados);
+async function salvar(requerimento) {
+  try {
+    await cadastrarRequerimento(requerimento);
+
+    alert("Requerimento cadastrado com sucesso!");
+
     reset();
+  } catch (erro) {
+    console.error(erro);
   }
+}
 
   return (
     <form

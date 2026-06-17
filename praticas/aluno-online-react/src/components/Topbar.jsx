@@ -12,8 +12,8 @@ function Topbar({titulo}) {
       <div className="perfil">
       <img src="../src/assets/avatar.svg" width="64" />
       <div className="usuario-info">
-  <h4>{usuario.nome}</h4>
-  <h5>{usuario.email}</h5>
+  <h4>{usuario?.nome}</h4>
+  <h5>{usuario?.email}</h5>
 </div>
      </div>
 
